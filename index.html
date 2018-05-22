@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Поликлиника!!!</title>
+    <meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+    <link rel="stylesheet" href="libs/foundation/css/foundation.css">
+    <link rel="stylesheet" href="libs/bxslider/dist/jquery.bxslider.css">
+    <script src="libs/JQuery/jquery-3.3.1.js"></script>
+    <script src="libs/bxslider/dist/jquery.bxslider.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.bxSlider').bxSlider({
+                mode: 'fade',
+                controls: false
+            });
+        });
+    </script>
+
+    <script src="libs/bxSliderMover.js" defer></script>
+
+    <link rel="stylesheet" href="main.css">
+    <script src="events.js" defer></script>
+</head>
+
+<body>
+
+    <header class="relative">
+        <!-- Слайдер -->
+        <div id="slider" class="show-for-medium slider">
+            <div class="bxSlider">
+                <!-- <div id="slide-0" class="bg-image-1 slider-size"></div> -->
+                <div id="slide-0" class="bg-image-2 slider-size">
+                    <div class="row show-for-large">
+                        <div class="columns large-5 in-header-text-param">
+                            <img class="in-header-img-param" style="margin-top: 150px" src="assets/pictures/slider_2/h_otkritie.png" alt="Открытие">
+                            <p>«Понимаешь, я себе представил, как маленькие ребятишки играют вечером в огромном поле, во ржи.
+                                Тысячи малышей, и кругом — ни души, ни одного взрослого, кроме меня. А я стою на самом краю
+                                скалы, над пропастью, понимаешь? И мое дело — ловить ребятишек, чтобы они не сорвались в
+                                пропасть. Понимаешь, они играют и не видят, куда бегут, а тут я подбегаю и ловлю их, чтобы
+                                они не сорвались. Вот и вся моя работа.»</p>
+                            <p class="align-right" style="color: rgb(0, 168, 160)">Джером Дэвид Сэлинджер</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="slide-1" class="bg-image-3 slider-size">
+                    <div class="row show-for-large">
+                        <div class="columns large-5 in-header-text-param">
+                            <img class="in-header-img-param" style="margin-top: 250px" src="assets/pictures/slider_3/h_spring.png" alt="Весна">
+                            <p style="margin-top: 50px">Если бы птицы могли слышать
+                                <br>Как поет моё сердце, и летит вслед за ними душа…
+                                <br>но я лишь цветок.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-image-4 slider-size-2 show-for-small-only"></div>
+
+        <!-- Меню для большого экранаs-->
+        <div class="absolute-for-menu show-for-large">
+            <div class="row">
+                <div class="columns large-4">
+                    <div class="row">
+                        <div class="columns large-12 neucha green-text">
+                            <p>Растим бережно</p>
+                        </div>
+                        <div class="columns large-12 large-letters">
+                            <p>меню</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns large-4 head-logo"></div>
+                <div class="columns large-4">
+                    <div class="row">
+                        <div class="columns large-12 neucha green-text align-right">
+                            <p>
+                                <span>+7 (423)</span> 255–75–75</p>
+                        </div>
+                        <div class="columns large-12 large-letters">
+                            <p>тебю</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Меню для среднего и малого экранов -->
+        <div class="absolute-for-menu hide-for-large">
+            <div class="row">
+                <div class="columns small-6">
+                    <img class="logo-for-small" src="assets/pictures/logo_top.svg" alt="Цветы жизни">
+                </div>
+                <div class="columns small-6 burger-position">
+                    <input type="checkbox" id="burger-checkbox" style="display: none;" />
+                    <label for="burger-checkbox" id="burger-button" style="display: inline-block;">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="quick-links-section">
+        <div class="row">
+            <div class="columns small-11 small-centered large-3 large-uncentered">
+                <p class="neucha green-text nowrap center-text">Если нужно быстро -</p>
+                <img class="as-text" src="assets/pictures/other/h_srazu_k_delu.png" alt="Сразу к делу">
+            </div>
+            <div class="columns small-4 large-3">
+                <div class="quick-links-button-bg1 form-position"></div>
+            </div>
+            <div class="columns small-4 large-3">
+                <div class="quick-links-button-bg2 form-position"></div>
+            </div>
+            <div class="columns small-4 large-3">
+                <div class="quick-links-button-bg3 form-position"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="row">
+            <div class="columns small-12 large-5 large-push-7">
+                <div>
+                    <p class="neucha green-text" style="text-align: right">Несколько слов</p>
+                    <img class="padding-bottom-16" src="assets/pictures/other/h_o_klinike.png" alt="">
+                    <p>Здравствуйте, друзья! Мы рады вас приветствовать в новой детской клинике «Цветы Жизни»!</p>
+                    <p>Почему мы выбрали для клиники именно такое название? Потому что находиться рядом, быть сопричастным к
+                        тому, как из маленького «зернышка» вырастает прекрасный цветок — это большое счастье! Мы твердо уверены,
+                        что в педиатрии нет случайных людей. Они здесь просто не задерживаются. За плечами наших врачей многие
+                        годы работы и десятки тысяч вылеченных пациентов. Мы их растим, бережно, как садовники выращивают
+                        цветы, мы радуемся их победам и огорчаемся неудачам, мы храним рисунки и фото, которые они нам дарят,
+                        в надежде, что когда-нибудь покажем их уже следующему поколению «зернышек».</p>
+                </div>
+            </div>
+            <div class="columns small-12 large-7 large-pull-5">
+                <img class="photo-back" src="assets/pictures/other/25.jpg">
+                <img class="photo-front" src="assets/pictures/other/24.jpg">
+            </div>
+        </div>
+    </section>
+
+    <section id="support-section">
+        <div class="center">
+            <p class="neucha white-text txt-pos-1">Всегда рядом с вами</p>
+            <img class="padding-bottom-16" src="assets/pictures/other/h_programms.png" alt="Программы сопровождения">
+        </div>
+
+        <div class="row small-up-2 large-up-4">
+
+            <div class="round-button-contaner column column-block ">
+                <div class="round-button border-color-11 background-img-11"></div>
+                <img class="padding-top-16" src="assets/pictures/round_buttons/h_zernishko.png" alt="Зернышко">
+                <p>Для самых маленьких
+                    <br>Наблюдение в клинике и на дому</p>
+            </div>
+
+            <div class="round-button-contaner column column-block ">
+                <div class="round-button border-color-11 background-img-11"></div>
+                <img class="padding-top-16" src="assets/pictures/round_buttons/h_zernishko.png" alt="Зернышко">
+                <p>Для самых маленьких
+                    <br>Наблюдение в клинике и на дому</p>
+            </div>
+
+            <div class="round-button-contaner column column-block ">
+                <div class="round-button border-color-11 background-img-11"></div>
+                <img class="padding-top-16" src="assets/pictures/round_buttons/h_zernishko.png" alt="Зернышко">
+                <p>Для самых маленьких
+                    <br>Наблюдение в клинике и на дому</p>
+            </div>
+
+            <div class="round-button-contaner column column-block ">
+                <div class="round-button border-color-11 background-img-11"></div>
+                <img class="padding-top-16" src="assets/pictures/round_buttons/h_zernishko.png" alt="Зернышко">
+                <p>Для самых маленьких
+                    <br>Наблюдение в клинике и на дому</p>
+            </div>
+
+            <div class="round-button-contaner column column-block ">
+                <div class="round-button border-color-11 background-img-11"></div>
+                <img class="padding-top-16" src="assets/pictures/round_buttons/h_zernishko.png" alt="Зернышко">
+                <p>Для самых маленьких
+                    <br>Наблюдение в клинике и на дому</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="about-section">
+        <div class="center">
+            <p class="neucha white-text txt-pos-1">Чем мы можем вам помочь?</p>
+            <img class="padding-bottom-16" src="assets/pictures/other/h_services.png" alt="Программы сопровождения">
+        </div>
+
+        <div class="row small-up-2 large-up-4">
+
+            <div class="round-button-contaner column column-block ">
+                <div class="round-button border-color-21 background-img-21"></div>
+                <p class="large-letters">Консультативная помощь</p>
+            </div>
+
+            <div class="round-button-contaner column column-block ">
+                <div class="round-button border-color-21 background-img-21"></div>
+                <p class="large-letters">Консультативная помощь</p>
+            </div>
+
+            <div class="round-button-contaner column column-block ">
+                <div class="round-button border-color-21 background-img-21"></div>
+                <p class="large-letters">Консультативная помощь</p>
+            </div>
+
+            <div class="round-button-contaner column column-block ">
+                <div class="round-button border-color-21 background-img-21"></div>
+                <p class="large-letters">Консультативная помощь</p>
+            </div>
+
+            <div class="round-button-contaner column column-block ">
+                <div class="round-button border-color-21 background-img-21"></div>
+                <p class="large-letters">Консультативная помощь</p>
+            </div>
+
+            <div class="round-button-contaner column column-block ">
+                <div class="round-button border-color-21 background-img-21"></div>
+                <p class="large-letters">Консультативная помощь</p>
+            </div>
+
+            <div class="round-button-contaner column column-block ">
+                <div class="round-button border-color-21 background-img-21"></div>
+                <p class="large-letters">Консультативная помощь</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="photo-section">
+
+    </section>
+
+    <section class="footer">
+        <h2>Футер</h2>
+        <p>с копирайтом и контактами</p>
+    </section>
+
+</body>
+
+</html>

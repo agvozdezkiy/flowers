@@ -1,0 +1,112 @@
+<svg width="2000" height="600" viewBox="0 0 2000 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<style>
+			.light_00 {
+				-webkit-animation: blink 2s linear infinite;
+				animation: blink 2s linear infinite;
+			}
+			.light_05 {
+				-webkit-animation: blink 2s linear 0.2s infinite;
+				animation: blink 2s linear 0.2s infinite;
+			}
+			.light_10 {
+				-webkit-animation: blink 2s linear 0.4s infinite;
+				animation: blink 2s linear 0.4s infinite;
+			}
+			.light_15 {
+				-webkit-animation: blink 2s linear 0.6s infinite;
+				animation: blink 2s linear 0.6s infinite;
+			}
+			.light_20 {
+				-webkit-animation: blink 2s linear 0.8s infinite;
+				animation: blink 2s linear 0.8s infinite;
+			}
+			.light_25 {
+				-webkit-animation: blink 2s linear 1s infinite;
+				animation: blink 2s linear 1s infinite;
+			}
+			.light_30 {
+				-webkit-animation: blink 2s linear 1.2s infinite;
+				animation: blink 2s linear 1.2s infinite;
+			}
+			.light_35 {
+				-webkit-animation: blink 2s linear 1.4s infinite;
+				animation: blink 2s linear 1.4s infinite;
+			}
+			.light_40 {
+				-webkit-animation: blink 2s linear 1.6s infinite;
+				animation: blink 2s linear 1.6s infinite;
+			}
+			.light_45 {
+				-webkit-animation: blink 2s linear 1.8s infinite;
+				animation: blink 2s linear 1.8s infinite;
+			}
+			@-webkit-keyframes blink {
+				0% {opacity: 1;}
+				20% {opacity: 1;}
+				30% {opacity: 0;}
+				70% {opacity: 0;}
+				80% {opacity: 1;}
+				100% {opacity: 1}
+			}
+			@keyframes blink {
+				0% {opacity: 1;}
+				20% {opacity: 1;}
+				30% {opacity: 0;}
+				70% {opacity: 0;}
+				80% {opacity: 1;}
+				100% {opacity: 1}
+			}
+		</style>
+		<radialGradient  x1="17.377%" y1="0%" y2="79.133%" id="a">
+			<stop stop-color="#ea2f0a" offset="0%"/>
+			<stop stop-color="#ff4b28" offset="100%"/>
+		</radialGradient >
+	</defs>
+	<circle class="light_10" id="light_10" cx="1503" cy="116" r="4" fill="url(#a)" />
+	<circle class="light_20" id="light_30" cx="1485" cy="136" r="4" fill="url(#a)" />
+	<circle class="light_00" id="light_30" cx="1440" cy="124" r="4" fill="url(#a)" />
+	<circle class="light_25" id="light_30" cx="1468" cy="125" r="4" fill="url(#a)" />
+	<circle class="light_05" id="light_30" cx="1439" cy="107" r="4" fill="url(#a)" />
+	<circle class="light_40" id="light_30" cx="1455" cy="71" r="4" fill="url(#a)" />
+	<circle class="light_30" id="light_30" cx="1478" cy="75" r="4" fill="url(#a)" />
+	<circle class="light_15" id="light_30" cx="1485" cy="98" r="4" fill="url(#a)" />
+	<circle class="light_45" id="light_30" cx="1530" cy="102" r="4" fill="url(#a)" />
+	<circle class="light_35" id="light_30" cx="1543" cy="118" r="4" fill="url(#a)" />
+	<circle class="light_00" id="light_30" cx="1557" cy="131" r="4" fill="url(#a)" />
+	<circle class="light_05" id="light_30" cx="1595" cy="116" r="4" fill="url(#a)" />
+	<circle class="light_25" id="light_30" cx="1624" cy="111" r="4" fill="url(#a)" />
+	<circle class="light_20" id="light_30" cx="1653" cy="102" r="4" fill="url(#a)" />
+	<circle class="light_15" id="light_30" cx="1655" cy="135" r="4" fill="url(#a)" />
+	<circle class="light_10" id="light_30" cx="1677" cy="168" r="4" fill="url(#a)" />
+	<circle class="light_20" id="light_30" cx="1673" cy="196" r="4" fill="url(#a)" />
+	<circle class="light_05" id="light_30" cx="1698" cy="221" r="4" fill="url(#a)" />
+	<circle class="light_20" id="light_30" cx="1709" cy="238" r="4" fill="url(#a)" />
+	<circle class="light_35" id="light_30" cx="1734" cy="213" r="4" fill="url(#a)" />
+	<circle class="light_15" id="light_30" cx="1768" cy="169" r="4" fill="url(#a)" />
+	<circle class="light_00" id="light_30" cx="1784" cy="164" r="4" fill="url(#a)" />
+	<circle class="light_30" id="light_30" cx="1796" cy="150" r="4" fill="url(#a)" />
+	<circle class="light_20" id="light_30" cx="1756" cy="149.5" r="4" fill="url(#a)" />
+	<circle class="light_35" id="light_30" cx="1764" cy="60" r="4" fill="url(#a)" />
+	<circle class="light_45" id="light_30" cx="1743" cy="44" r="5" fill="url(#a)" />
+	<circle class="light_40" id="light_30" cx="1721" cy="38" r="4" fill="url(#a)" />
+	<circle class="light_10" id="light_30" cx="1666" cy="58" r="5" fill="url(#a)" />
+	<circle class="light_05" id="light_30" cx="1648" cy="68" r="4" fill="url(#a)" />
+	<circle class="light_30" id="light_30" cx="1519" cy="21" r="4" fill="url(#a)" />
+	<circle class="light_25" id="light_30" cx="1483" cy="38" r="4" fill="url(#a)" />
+	<circle class="light_40" id="light_30" cx="1467" cy="23" r="4" fill="url(#a)" />
+	<circle class="light_15" id="light_30" cx="1366" cy="7" r="4" fill="url(#a)" />
+	<circle class="light_25" id="light_30" cx="1383" cy="77" r="4" fill="url(#a)" />
+	<circle class="light_45" id="light_30" cx="1358" cy="72" r="4" fill="url(#a)" />
+	<circle class="light_10" id="light_30" cx="1333" cy="134" r="4" fill="url(#a)" />
+	<circle class="light_20" id="light_30" cx="1300" cy="103" r="5" fill="url(#a)" />
+	<circle class="light_00" id="light_30" cx="1265" cy="120" r="5" fill="url(#a)" />
+	<circle class="light_45" id="light_30" cx="1209" cy="114" r="4" fill="url(#a)" />
+	<circle class="light_05" id="light_30" cx="1202" cy="60" r="4" fill="url(#a)" />
+	<circle class="light_15" id="light_30" cx="1157" cy="49" r="4" fill="url(#a)" />
+	<circle class="light_40" id="light_30" cx="1154" cy="105" r="4" fill="url(#a)" />
+	<circle class="light_30" id="light_30" cx="1100" cy="101" r="4" fill="url(#a)" />
+	<circle class="light_25" id="light_30" cx="1071" cy="52" r="4" fill="url(#a)" />
+	<circle class="light_45" id="light_30" cx="972" cy="25" r="4" fill="url(#a)" />
+	<circle class="light_30" id="light_30" cx="937" cy="3" r="4" fill="url(#a)" />
+</svg>

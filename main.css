@@ -1,0 +1,350 @@
+body {
+    margin: 0px;
+}
+
+.slider-size {
+    height: 600px;
+}
+
+.slider-size-2 {
+    width: 100vw;
+    height: 150px;
+}
+
+.bg-image-1 {
+    background: url(assets/pictures/slider_1/lights.svg) center, url(assets/pictures/slider_1/winter.jpg) center;
+}
+
+.bg-image-2 {
+    background: url(assets/pictures/slider_2/main_wave_02.svg) bottom repeat-x, url(assets/pictures/slider_2/main_korablik.png) no-repeat 90% bottom, url(assets/pictures/slider_2/main_wave_01.svg) bottom repeat-x, url(assets/pictures/slider_2/main_mayak.png) no-repeat bottom center, url(assets/pictures/slider_2/main_cloud_1.png) no-repeat 30% 25%, url(assets/pictures/slider_2/main_cloud_1.png) no-repeat 90% 70%, url(assets/pictures/slider_2/main_cloud_2.png) no-repeat 20% 70%, url(assets/pictures/slider_2/main_cloud_3.png) no-repeat 45% 30%, url(assets/pictures/slider_2/main_cloud_4.png) no-repeat 60% 50%, url(assets/pictures/slider_2/main_cloud_5.png) no-repeat 80% 40%, #c8f2ee;
+}
+
+.bg-image-3 {
+    background: url(assets/pictures/slider_3/devochki.png) no-repeat calc(50% + 250px)230px, url(assets/pictures/slider_3/malchik_korablik.png) no-repeat calc(50% + -100px) 120px, url(assets/pictures/slider_3/gorshok.png) no-repeat calc(50% + 500px) 60px, url(assets/pictures/slider_3/gora_volna.png) no-repeat calc(50% + 200px) 110px, url(assets/pictures/slider_3/solnce.png) no-repeat calc(50% + 50px) -20px, url(assets/pictures/slider_3/girlyanda.png) no-repeat calc(50% + 100px) 0px, url(assets/pictures/slider_3/bg_3.jpg) center;
+}
+
+.bg-image-4 {
+    background: url(assets/pictures/mobile_header.jpg) no-repeat center;
+}
+
+/*----------------------------------------*
+ *--Классы переопределяющие вид пейджера--*
+ *----------------------------------------*/
+
+/* #region */
+
+.bx-wrapper {
+    border: none;
+    margin-bottom: 0;
+}
+
+.bx-wrapper .bx-pager {
+    bottom: 50px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: rgba(256, 256, 256, .6);
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px #808080;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: rgba(256, 256, 256);
+}
+
+/*---------Бургер-----------*/
+
+#burger-checkbox {
+    display: none;
+}
+
+#burger-button {
+    position: relative;
+    width: 50px;
+    height: 40px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 1.7em;
+    transition: all .5s;
+    text-align: left;
+}
+
+#burger-button div,
+#burger-button div:before,
+#burger-button div:after {
+    background: #00a8a0;
+    position: absolute;
+    height: 5px;
+    width: 50px;
+    border-radius: 4px;
+    transition: all .5s;
+}
+
+#burger-button div:first-child {
+    top: 0px;
+}
+
+#burger-button div:nth-child(2) {
+    top: 15px;
+}
+
+#burger-button div:nth-child(3) {
+    top: 30px;
+}
+
+/*----Анимашки для бургера----*/
+
+#burger-checkbox+#burger-button div:first-child {
+    transition: top .15s .15s, -webkit-transform .15s;
+    transition: top .15s .15s, transform .15s;
+    transition: top .15s .15s, transform .15s, -webkit-transform .15s;
+}
+
+#burger-checkbox+#burger-button div:nth-child(2),
+#burger-checkbox+#burger-button div:nth-child(3) {
+    transition: top .15s .15s, -webkit-transform .15s;
+    transition: top .15s .15s, transform .15s;
+    transition: top .15s .15s, transform .15s, -webkit-transform .15s;
+}
+
+#burger-checkbox:checked+#burger-button div:first-child {
+    top: 10px;
+    background-color: white;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: background-color .15s, top .15s, -webkit-transform .15s .15s;
+    transition: background-color .15s, top .15s, transform .15s .15s;
+    transition: background-color .15s, top .15s, transform .15s .15s, -webkit-transform .15s .15s;
+}
+
+#burger-checkbox:checked+#burger-button div:nth-child(2),
+#burger-checkbox:checked+#burger-button div:nth-child(3) {
+    top: 10px;
+    background-color: white;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    transition: background-color .15s, top .15s, -webkit-transform .15s .15s;
+    transition: background-color .15s, top .15s, transform .15s .15s;
+    transition: background-color .15s, top .15s, transform .15s .15s, -webkit-transform .15s .15s;
+}
+
+/* #endregion */
+
+/*--------------------------------------------*/
+
+.absolute-for-menu {
+    position: absolute;
+    width: 100%;
+    top: 20px;
+}
+
+.relative {
+    position: relative;
+    top: 0px;
+}
+
+/*----------------Содержимое хедера------------*/
+
+/* #region */
+
+.head-logo {
+    background: url(assets/pictures/logo_top.svg) center no-repeat;
+    min-height: 70px;
+}
+
+.neucha {
+    font: 400 16px Neucha, cursive;
+    line-height: 25.6px;
+    letter-spacing: 3.6px;
+}
+
+.green-text {
+    color: #628117;
+}
+
+.white-text {
+    color: #ffffff;
+}
+
+.center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.as-text {
+    display: inline;
+}
+
+.columns.large-12.green-neucha>p {
+    margin: 0px;
+}
+
+.columns.large-12.green-neucha>p>span {
+    color: #a9c935;
+}
+
+.large-letters {
+    color: #00a8a0;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.in-header-text-param {
+    color: #784845;
+    font: 400 16px Neucha, cursive;
+    line-height: 22px;
+}
+
+.in-header-img-param {
+    margin-left: 30px;
+}
+
+.burger-position {
+    display: inline-block;
+    text-align: right;
+}
+
+.logo-for-small {
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+/* #endregion */
+
+/*--Быстрые ссылки */
+
+/* #region */
+
+.quick-links-section {
+    height: 250px;
+    overflow: hidden;
+    background: url(assets/pictures/quik_links_bg.jpg) center;
+}
+
+.quick-links-button-bg1 {
+    background: url(assets/pictures/buttons/b_question.jpg) top no-repeat;
+}
+
+.quick-links-button-bg2 {
+    background: url(assets/pictures/buttons/b_sign.jpg) top no-repeat;
+}
+
+.quick-links-button-bg3 {
+    background: url(assets/pictures/buttons/b_pay.jpg) top no-repeat;
+}
+
+.form-position {
+    width: 280px;
+    height: 280px;
+    margin-top: 35px;
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: rgb(158, 158, 158) 0px 0px 5px;
+}
+
+/* #endregion */
+
+/*--О нашей клинике */
+
+/* #region */
+
+.about-section {
+    margin-top: 1px;
+    background-color: #e3dedb;
+}
+
+.photo-back {
+    width: 70%;
+    margin: 15px 0 0 20px;
+}
+
+.photo-front {
+    width: 70%;
+    margin: -110px 0 30px 27%;
+}
+
+.txt-pos-1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+/* #endregion */
+
+/*--Программы-сопровождения*/
+
+/* #region */
+
+#support-section {
+    background: linear-gradient(#8febd7, #12ada4);
+}
+
+#support-section>p {
+    text-align: center;
+}
+
+.round-button-contaner {
+    font-family: 'Helvetica', 'arial';
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.064em;
+    text-align: center;
+    width: 249px;
+}
+
+.padding-bottom-16 {
+    padding: 0 0 16px 0;
+}
+
+.padding-top-16 {
+    padding: 16px 0 0 0;
+}
+
+.round-button {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.border-color-11 {
+    border: solid 5px #49cdbc;
+}
+
+.border-color-21 {
+    border: solid 5px #b6ab90;
+}
+
+.background-img-11 {
+    background: url(assets/pictures/round_buttons/b_zernishko.jpg);
+}
+
+.background-img-21 {
+    background: url(assets/pictures/round_buttons/service_lab.png);
+}
+
+/* #endregion */
+
+/*--Фотографии*/
+/*  #region */
+.photo-section {
+    height: 599px;
+    background: url(assets/pictures/other/news-bg.png);
+}
+/* #endregion */
+
+/* --Футер */
+/* #region */
+.footer{
+    text-align: center;
+}
+/* #endregion */
