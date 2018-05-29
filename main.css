@@ -340,6 +340,18 @@ body {
     height: 599px;
     background: url(assets/pictures/other/news-bg.png);
 }
+.galery{
+    margin: -8em 0 0;
+}
+
+.big-photo{
+    display: block;
+}
+
+.small-photo{
+    display: block;
+    margin: 8.5em 0 0;
+}
 
 
 /* #endregion */
