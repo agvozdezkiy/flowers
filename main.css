@@ -233,6 +233,7 @@ body {
 }
 
 .quick-links-button-bg1 {
+    width: 100%;
     background: url(assets/pictures/buttons/b_question.jpg) top no-repeat;
 }
 
@@ -245,11 +246,22 @@ body {
 }
 
 .form-position {
-    width: 280px;
-    height: 280px;
+    display: inline-block;
+    width: 100%;
     margin-top: 35px;
     border-radius: 15px 15px 0px 0px;
     box-shadow: rgb(158, 158, 158) 0px 0px 5px;
+}
+
+@media screen and (min-width: 64rem){
+    .quick-links-height{
+        height: 230px;
+    }
+}
+@media screen and (min-width: 40rem) and (max-width: 63.95rem){
+    .quick-links-height{
+        height: 25vw;
+    }
 }
 
 /* #endregion */
@@ -340,8 +352,9 @@ body {
     height: 599px;
     background: url(assets/pictures/other/news-bg.png);
 }
-.galery{
+.gallery{
     margin: -8em 0 0;
+    float: left;
 }
 
 .big-photo{
