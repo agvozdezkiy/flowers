@@ -222,34 +222,55 @@ body {
 
 /* #endregion */
 
-/*--Быстрые ссылки */
+/*--Сразу к делу */
 
 /* #region */
 
 .quick-links-section {
-    height: 250px;
+    /* height: 250px; */
     overflow: hidden;
-    background: url(assets/pictures/quik_links_bg.jpg) center;
+    background: url(assets/pictures/quik_links_bg.jpg) center/cover;
 }
 
 .quick-links-button-bg1 {
-    background: url(assets/pictures/buttons/b_question.jpg) top no-repeat;
+    background: url(assets/pictures/buttons/b_question.jpg) top/cover no-repeat;
 }
 
 .quick-links-button-bg2 {
-    background: url(assets/pictures/buttons/b_sign.jpg) top no-repeat;
+    background: url(assets/pictures/buttons/b_sign.jpg) top/cover no-repeat;
 }
 
 .quick-links-button-bg3 {
-    background: url(assets/pictures/buttons/b_pay.jpg) top no-repeat;
+    background: url(assets/pictures/buttons/b_pay.jpg) top/cover no-repeat;
 }
 
 .form-position {
-    width: 280px;
-    height: 280px;
+    width: 100%;
+    height: 24vw;
     margin-top: 35px;
     border-radius: 15px 15px 0px 0px;
     box-shadow: rgb(158, 158, 158) 0px 0px 5px;
+    margin-bottom: -25px;
+}
+
+@media screen and (min-width: 64rem){
+    .form-position{
+        height: 230px;
+    }
+}
+
+.as-button{
+    display: block;
+    background: transparent;
+    width: 16rem;
+    border: 2px solid #00a8a0;
+    padding: 5px 0 5px;
+    margin: 0 auto 1rem auto;
+    border-radius: 10px;
+}
+
+div a:link{
+    text-decoration: none;
 }
 
 /* #endregion */
@@ -340,8 +361,8 @@ body {
     height: 599px;
     background: url(assets/pictures/other/news-bg.png);
 }
-.galery{
-    margin: -8em 0 0;
+.gallery{
+    margin-top: -8em;
 }
 
 .big-photo{
