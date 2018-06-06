@@ -233,7 +233,12 @@ body {
 }
 
 .quick-links-button-bg1 {
+<<<<<<< HEAD
     background: url(assets/pictures/buttons/b_question.jpg) top/cover no-repeat;
+=======
+    width: 100%;
+    background: url(assets/pictures/buttons/b_question.jpg) top no-repeat;
+>>>>>>> e80e9dd9dbfefc14bfa5e9cd24e54454a0b1c2be
 }
 
 .quick-links-button-bg2 {
@@ -245,8 +250,13 @@ body {
 }
 
 .form-position {
+<<<<<<< HEAD
     width: 100%;
     height: 24vw;
+=======
+    display: inline-block;
+    width: 100%;
+>>>>>>> e80e9dd9dbfefc14bfa5e9cd24e54454a0b1c2be
     margin-top: 35px;
     border-radius: 15px 15px 0px 0px;
     box-shadow: rgb(158, 158, 158) 0px 0px 5px;
@@ -271,6 +281,17 @@ body {
 
 div a:link{
     text-decoration: none;
+}
+
+@media screen and (min-width: 64rem){
+    .quick-links-height{
+        height: 230px;
+    }
+}
+@media screen and (min-width: 40rem) and (max-width: 63.95rem){
+    .quick-links-height{
+        height: 25vw;
+    }
 }
 
 /* #endregion */
@@ -362,7 +383,12 @@ div a:link{
     background: url(assets/pictures/other/news-bg.png);
 }
 .gallery{
+<<<<<<< HEAD
     margin-top: -8em;
+=======
+    margin: -8em 0 0;
+    float: left;
+>>>>>>> e80e9dd9dbfefc14bfa5e9cd24e54454a0b1c2be
 }
 
 .big-photo{
