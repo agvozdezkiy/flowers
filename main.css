@@ -184,6 +184,9 @@ body {
 .as-text {
     display: inline;
 }
+.as-block{
+    display: block;
+}
 
 .columns.large-12.green-neucha>p {
     margin: 0px;
@@ -233,12 +236,7 @@ body {
 }
 
 .quick-links-button-bg1 {
-<<<<<<< HEAD
     background: url(assets/pictures/buttons/b_question.jpg) top/cover no-repeat;
-=======
-    width: 100%;
-    background: url(assets/pictures/buttons/b_question.jpg) top no-repeat;
->>>>>>> e80e9dd9dbfefc14bfa5e9cd24e54454a0b1c2be
 }
 
 .quick-links-button-bg2 {
@@ -250,14 +248,9 @@ body {
 }
 
 .form-position {
-<<<<<<< HEAD
     width: 100%;
     height: 24vw;
-=======
-    display: inline-block;
-    width: 100%;
->>>>>>> e80e9dd9dbfefc14bfa5e9cd24e54454a0b1c2be
-    margin-top: 35px;
+    transform: translateY(25px);
     border-radius: 15px 15px 0px 0px;
     box-shadow: rgb(158, 158, 158) 0px 0px 5px;
     margin-bottom: -25px;
@@ -266,6 +259,14 @@ body {
 @media screen and (min-width: 64rem){
     .form-position{
         height: 230px;
+    }
+}
+.text-centering{
+    text-align: center;
+}
+@media screen and (min-width: 64rem){
+    .text-centering{
+        text-align: left;
     }
 }
 
@@ -279,8 +280,9 @@ body {
     border-radius: 10px;
 }
 
-div a:link{
+a:link, a:visited{
     text-decoration: none;
+    color: white;
 }
 
 @media screen and (min-width: 64rem){
@@ -367,11 +369,41 @@ div a:link{
 }
 
 .background-img-11 {
-    background: url(assets/pictures/round_buttons/b_zernishko.jpg);
+    background: url(assets/pictures/round_buttons/b_zernishko.jpg) center/cover;
+}
+
+.background-img-12 {
+    background: url(assets/pictures/round_buttons/b_ladushki.jpg) center/cover;
+}
+
+.background-img-13 {
+    background: url(assets/pictures/round_buttons/b_chizhiki.jpg) center/cover;
+}
+
+.background-img-14 {
+    background: url(assets/pictures/round_buttons/b_s_usami.jpg) center/cover;
 }
 
 .background-img-21 {
-    background: url(assets/pictures/round_buttons/service_lab.png);
+    background: url(assets/pictures/round_buttons/service_consult.png) center/cover;
+}
+.background-img-22 {
+    background: url(assets/pictures/round_buttons/service_at_home.png) center/cover;
+}
+.background-img-23 {
+    background: url(assets/pictures/round_buttons/service_lab.png) center/cover;
+}
+.background-img-24 {
+    background: url(assets/pictures/round_buttons/service_vac.png) center/cover;
+}
+.background-img-25 {
+    background: url(assets/pictures/round_buttons/service_listki.png) center/cover;
+}
+.background-img-26 {
+    background: url(assets/pictures/round_buttons/service_docs.png) center/cover;
+}
+.background-img-27 {
+    background: url(assets/pictures/round_buttons/service_presents.png) center/cover;
 }
 
 /* #endregion */
@@ -379,16 +411,18 @@ div a:link{
 /*--Фотографии*/
 /*  #region */
 .photo-section {
-    height: 599px;
     background: url(assets/pictures/other/news-bg.png);
 }
+.photo-section::after{
+        clear: both;
+}
 .gallery{
-<<<<<<< HEAD
     margin-top: -8em;
-=======
-    margin: -8em 0 0;
-    float: left;
->>>>>>> e80e9dd9dbfefc14bfa5e9cd24e54454a0b1c2be
+    float: right;
+}
+
+ .photo-section::after{
+    clear: both;
 }
 
 .big-photo{
