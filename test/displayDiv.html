@@ -4,36 +4,55 @@
     <meta charset="UTF-8">
     <title>Отображение блоков</title>
     <style>
-        .div2{
-            background: #aaaaaa;
-            /* height: 100px;
-            width: 100px; */
+        .box-1{
+            background: floralwhite;
         }
-        .div1{
-            background: transparent;
-/*             height: 100px;*/
-            width: 100px;
-            border: 2px solid;
+        .box-2{
+            background: lightcoral;
+        }
+        .box-1::after, .box-2::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .float-one{
+            width: 150px;
+            height: 150px;
             float: left;
-            position: relative;
-            left: 200px;
+            background: green;
         }
-        .div3{
-            margin: -30px 0 0;
-            color: green;
-            float: right;
+        .float-two{
+            width: 150px;
+            height: 150px;
+            float: left;
+            background: greenyellow;
         }
+        .float-tree{
+            width: 150px;
+            height: 150px;
+            float: left;
+            background: blue;
+        }
+        .float-four{
+            width: 150px;
+            height: 150px;
+            float: left;
+            background: blueviolet;
+        }
+        
     </style>
 </head>
 <body>
-    <div class="div1">
-        
-        <div class="div2">
-            <p>Понравится ли ему здесь? Все ли с ним хорошо? Как понять где болезнь, а где особенности развития? Что делать, если малыш все-таки заболел? Конечно, в эпоху Интернета ответы на эти и многие другие, волнующие родителей вопросы можно поискать там. Но как самим выбрать из них правильный, ведь порой предлагаемая информация очень противоречива?</p>
+    <div class="box-1">
+        <div style="float: left;  margin-bottom: -100px;">
+            <div class="float-one"></div>
+            <div class="float-two"></div>
         </div>
     </div>
-    <div class="div3">
-            <p>Понравится ли ему здесь? Все ли с ним хорошо? Как понять где болезнь, а где особенности развития? Что делать, если малыш все-таки заболел? Конечно, в эпоху Интернета ответы на эти и многие другие, волнующие родителей вопросы можно поискать там. Но как самим выбрать из них правильный, ведь порой предлагаемая информация очень противоречива?</p>
-        </div>
-    </body>
-    </html>
+     <div class="box-2">
+        <div class="float-tree"></div>
+        <div class="float-four"></div>
+     </div>
+     <img src="../assets/pictures/other/25.jpg" alt="Picture" style="allign: center;">
+</body>
+</html>

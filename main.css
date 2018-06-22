@@ -27,6 +27,25 @@ body {
     background: url(assets/pictures/mobile_header.jpg) no-repeat center;
 }
 
+table a:link, table a:active, table a:visited{
+    color: #00a8a0;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+}
+
+td{
+    padding: 0.7rem calc(6vw - 53px);
+    white-space: nowrap;
+}
+td:first-child{
+    padding-left: 0px;       
+}
+td:last-child{
+    padding-right: 0px;
+}
+
 /*----------------------------------------*
  *--Классы переопределяющие вид пейджера--*
  *----------------------------------------*/
@@ -146,7 +165,7 @@ body {
     top: 0px;
 }
 
-/*----------------Содержимое хедера------------*/
+/*----------------Общее------------*/
 
 /* #region */
 
@@ -187,6 +206,11 @@ body {
 .as-block{
     display: block;
 }
+/* #endregion */
+
+/*----------------Содержимое хедера------------*/
+
+/* #region */
 
 .columns.large-12.green-neucha>p {
     margin: 0px;
@@ -261,11 +285,11 @@ body {
         height: 230px;
     }
 }
-.text-centering{
+.text-center-and-left{
     text-align: center;
 }
 @media screen and (min-width: 64rem){
-    .text-centering{
+    .text-center-and-left{
         text-align: left;
     }
 }
@@ -280,7 +304,7 @@ body {
     border-radius: 10px;
 }
 
-a:link, a:visited{
+.round-button-contaner .as-block:link, .round-button-contaner .as-block:visited{
     text-decoration: none;
     color: white;
 }
@@ -317,9 +341,13 @@ a:link, a:visited{
     margin: -110px 0 30px 27%;
 }
 
-.txt-pos-1 {
-    margin-top: 0;
+.text-center-and-right{
     text-align: center;
+}
+@media screen and (min-width: 64rem){
+    .text-center-and-right{
+        text-align: right;
+    }
 }
 
 /* #endregion */
@@ -329,6 +357,7 @@ a:link, a:visited{
 /* #region */
 
 #support-section {
+    padding-top: 2rem;
     background: linear-gradient(#8febd7, #12ada4);
 }
 
@@ -384,6 +413,15 @@ a:link, a:visited{
     background: url(assets/pictures/round_buttons/b_s_usami.jpg) center/cover;
 }
 
+/* #endregion */
+
+/*--Наши услуги--*/
+
+.service{
+    margin-top: 1px;
+    padding-top: 2rem;
+    background-image: linear-gradient(#e3dedb, #ffffff);
+}
 .background-img-21 {
     background: url(assets/pictures/round_buttons/service_consult.png) center/cover;
 }
@@ -406,19 +444,29 @@ a:link, a:visited{
     background: url(assets/pictures/round_buttons/service_presents.png) center/cover;
 }
 
-/* #endregion */
-
 /*--Фотографии*/
 /*  #region */
 .photo-section {
-    background: url(assets/pictures/other/news-bg.png);
+    padding-top: 2rem;
+    background: #304a3b;
+}
+
+@media screen and (min-width: 40rem){
+    .photo-section {
+        padding-top: 2rem;
+        background: url(assets/pictures/other/news-bg.png)#304a3b;
+    }
 }
 .photo-section::after{
         clear: both;
 }
 .gallery{
-    margin-top: -8em;
-    float: right;
+    margin-top: 2rem;
+    float: left;
+    /* width:100%; */
+}
+.photo-section-header{
+    text-align: center;
 }
 
  .photo-section::after{
@@ -429,9 +477,61 @@ a:link, a:visited{
     display: block;
 }
 
+.pic-width{
+    width: 100%;
+}
+
 .small-photo{
+    width: 100%;
     display: block;
-    margin: 8.5em 0 0;
+    margin: 0;
+}
+
+.text-aligment{
+    text-align: center;
+}
+
+@media screen and (min-width: 40rem) and (max-width: 63.95rem){
+    .gallery{
+        margin-top: -2rem;
+    }
+
+    .text-aligment{
+        text-align: left;
+    }
+    
+    .small-photo{
+        margin: 3rem 0 0;
+    }
+}
+
+@media screen and (min-width: 64rem){
+    .gallery{
+        margin-top: -6rem;
+    }
+
+    .text-aligment{
+        text-align: right;
+    }
+
+    .photo-section-header{
+        padding-right: 4rem;
+    }
+    
+    .small-photo{
+        margin: 8.5rem 0 0;
+    }
+}
+
+.small-photo:link, .small-photo:visited, .small-photo:active,
+.big-photo:link, .big-photo:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.link-header{
+    color: #00a8a0;
+    font-weight: bold;
 }
 
 
@@ -440,6 +540,8 @@ a:link, a:visited{
 /* --Футер */
 /* #region */
 .footer{
+    padding: 1rem 0;
     text-align: center;
+    background: #e9e5ce;
 }
 /* #endregion */

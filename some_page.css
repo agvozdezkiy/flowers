@@ -2,5 +2,43 @@ body{
     margin: 0px;
 }
 .bg-image {
-    background: url(assets/pictures/slider_5/inner_header_flowers.png) 50% bottom repeat-x, url(assets/pictures/slider_5/inner_header_flowers.png) bottom repeat-x, url(assets/pictures/slider_5/inner_header_malish.png) no-repeat 40% bottom, url(assets/pictures/slider_5/inner_header_boy.png) no-repeat 70%, url(assets/pictures/slider_5/inner_header_lian.png) no-repeat 20% top, url(assets/pictures/slider_5/inner_header_01.jpg) no-repeat;
+    overflow-Y: hidden; 
+    background: url(assets/pictures/slider_5/inner_header_flowers.png) bottom repeat-x, url(assets/pictures/slider_5/inner_header_malish.png) no-repeat 40% bottom, url(assets/pictures/slider_5/inner_header_boy.png) no-repeat 70%, url(assets/pictures/slider_5/inner_header_lian.png) no-repeat 20% top, url(assets/pictures/slider_5/inner_header_01.jpg) repeat;
+}
+.bg-image:hover{
+    
+}
+
+.girl-arms{
+    width: 159px;
+    height: 12px;
+    position: absolute;
+    top: 287px;
+    left: calc(50% - 159px / 2);
+    background: url(assets/pictures/slider_5/inner_header_heands.png);
+}
+
+.girl-head{
+    width: 116px;
+    height: 189px;
+    position: relative;
+    top: 104px;
+    margin: 0 auto;
+    background: url(assets/pictures/slider_5/inner_header_girl.png);
+}
+
+.row.small-6{
+    width: 1000px;
+    text-align: center;
+    margin: 100px auto;
+}
+.slider-size{
+    width: 100vw;
+    height: 293px;
+}
+body{
+    background: #e9e5ce;
+}
+h2{
+    color: #00a8a0;
 }
