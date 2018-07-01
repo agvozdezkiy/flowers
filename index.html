@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neucha">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="libs/foundation/css/foundation.css">
     <link rel="stylesheet" href="libs/bxslider/dist/jquery.bxslider.css">
     <script src="libs/JQuery/jquery-3.3.1.js"></script>
@@ -21,7 +22,7 @@
 
     <script src="libs/bxSliderMover.js" defer></script>
     <link rel="stylesheet" href="main.css">
-    <script src="events.js" defer></script>
+    <script src="events.js"></script>
 </head>
 
 <body>
@@ -59,7 +60,7 @@
 
         <div class="bg-image-4 slider-size-2 show-for-small-only"></div>
 
-        <!-- Меню для большого экранаs-->
+        <!-- Меню для большого экрана-->
         <div class="absolute-for-menu show-for-large">
             <div class="row">
                 <div class="columns large-4">
@@ -115,6 +116,31 @@
                 </div>
             </div>
         </div>
+
+        <div class="fixed-for-menu">
+            <div class="side-bar">
+
+                <div class="burger-2-position">
+                    <input type="checkbox" id="burger-checkbox" style="display: none;"/>
+                    <label for="burger-checkbox" id="burger-button" style="display: inline-block;">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </label>
+                </div>
+
+                <ul>
+                    <li class="seablue-text underline">Главная страница</li>
+                    <li class="white-text underline"><a href="some_page.html">О нас</a></li>
+                    <li class="white-text underline"><a href="some_page.html">Сотрудники</a></li>
+                    <li class="white-text underline"><a href="some_page.html">Услуги</a></li>
+                    <li class="white-text underline"><a href="some_page.html">Программы</a></li>
+                    <li class="white-text underline"><a href="some_page.html">Статьи</a></li>
+                    <li class="white-text underline"><a href="some_page.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        
     </header>
                 <!-- Сразу к делу -->
     <section class="quick-links-section">
@@ -125,14 +151,14 @@
                 <img src="assets/pictures/other/h_srazu_k_delu.png" alt="Сразу к делу">
             </div>
             <div class="show-for-medium">
-                <div class="columns small-4 large-3">
-                    <a class="as-block quick-links-button-bg1 form-position" href="some_page.html" alt="Задать вопрос"></a>
+                <div class="columns small-4 large-3 anim-1">
+                    <a class="as-block quick-links-button-bg1 form" href="some_page.html" alt="Задать вопрос"></a>
                 </div>
-                <div class="columns small-4 large-3">
-                    <a class="as-block quick-links-button-bg2 form-position" href="some_page.html" alt="Запись на прием"></a>
+                <div class="columns small-4 large-3 anim-2">
+                    <a class="as-block quick-links-button-bg2 form" href="some_page.html" alt="Запись на прием"></a>
                 </div>
-                <div class="columns small-4 large-3">
-                    <a class="as-block quick-links-button-bg3 form-position" href="some_page.html" alt="Оплатить программу"></a>
+                <div class="columns small-4 large-3 anim-3">
+                    <a class="as-block quick-links-button-bg3 form" href="some_page.html" alt="Оплатить программу"></a>
                 </div>
             </div>
 
@@ -141,6 +167,7 @@
                 <a class="as-button large-letters green" href="some_page.html" alt="Задать вопрос">Записаться на прием</a>
                 <a class="as-button large-letters green" href="some_page.html" alt="Задать вопрос">Продлить договор</a>
             </div>
+            <!-- Замена анимации появления квадратных кнопок на :hover" -->
         </div>
 
     </section>
@@ -175,9 +202,8 @@
         </div>
 
         <div class="row small-up-2 large-up-4">
-
-            <div class="round-button-contaner column column-block ">
-                <a class="as-block" href="some_page.html" alt="Зернышко">
+            <div class="round-button-contaner column column-block">
+                <a class="rnd-button as-block start-pos" href="some_page.html" alt="Зернышко">
                     <div class="round-button border-color-11 background-img-11"></div>
                     <img class="padding-top-16" src="assets/pictures/round_buttons/h_zernishko.png" alt="Зернышко">
                     <p>Для самых маленьких
@@ -185,8 +211,8 @@
                 </a>
             </div>
 
-            <div class="round-button-contaner column column-block ">
-                <a class="as-block" href="some_page.html" alt="Ладушки">
+            <div class="round-button-contaner column column-block">
+                <a class="rnd-button as-block start-pos" href="some_page.html" alt="Ладушки">
                     <div class="round-button border-color-11 background-img-12"></div>
                     <img class="padding-top-16" src="assets/pictures/round_buttons/h_ladushki.png" alt="Зернышко">
                     <p>Для самых маленьких
@@ -194,8 +220,8 @@
                 </a>
             </div>
 
-            <div class="round-button-contaner column column-block ">
-                <a class="as-block" href="some_page.html" alt="Чижики">
+            <div class="round-button-contaner column column-block">
+                <a class="rnd-button as-block start-pos" href="some_page.html" alt="Чижики">
                     <div class="round-button border-color-11 background-img-13"></div>
                     <img class="padding-top-16" src="assets/pictures/round_buttons/h_chizhiki.png" alt="Зернышко">
                     <p>Для самых маленьких
@@ -203,8 +229,8 @@
                     </a>
                 </div>
 
-            <div class="round-button-contaner column column-block ">
-                <a class="as-block" href="some_page.html" alt="Сами с усами">
+            <div class="round-button-contaner column column-block">
+                <a class="rnd-button as-block start-pos" href="some_page.html" alt="Сами с усами">
                     <div class="round-button border-color-11 background-img-14"></div>
                     <img class="padding-top-16" src="assets/pictures/round_buttons/h_samisusami.png" alt="Зернышко">
                     <p>Для самых маленьких
@@ -225,47 +251,48 @@
         <div class="row small-up-2 large-up-4">
 
             <div class="round-button-contaner column column-block">
-                <a class="as-block" href="some_page.html" alt="Консультативная помощь">
+                <a class="rnd-button as-block start-pos" href="some_page.html" alt="Консультативная помощь">
                     <div class="round-button border-color-21 background-img-21"></div>
                     <p class="large-letters">Консультативная<br>помощь</p>
                 </a>
             </div>
             <div class="round-button-contaner column column-block">
-                <a class="as-block" href="some_page.html" alt="Помощь на дому">
+                <a class="rnd-button as-block start-pos" href="some_page.html" alt="Помощь на дому">
                     <div class="round-button border-color-21 background-img-22"></div>
                     <p class="large-letters">Помощь на дому</p>
                 </a>
             </div>
             <div class="round-button-contaner column column-block">
-                <a class="as-block" href="some_page.html" alt="Лабораторная диагностика">
+                <a class="rnd-button as-block start-pos" href="some_page.html" alt="Лабораторная диагностика">
                     <div class="round-button border-color-21 background-img-23"></div>
                     <p class="large-letters">Лабораторная<br>диагностика</p>
                 </a>
             </div>
             <div class="round-button-contaner column column-block">
-                <a class="as-block" href="some_page.html" alt="Прививки">
+                <a class="rnd-button as-block start-pos" href="some_page.html" alt="Прививки">
                     <div class="round-button border-color-21 background-img-24"></div>
                     <p class="large-letters">Прививки</p>
                 </a>
             </div>
             <div class="round-button-contaner column column-block">
-                <a class="as-block" href="some_page.html" alt="Листики временной нетрудоспособности">
+                <a class="rnd-button as-block start-pos" href="some_page.html" alt="Листики временной нетрудоспособности">
                     <div class="round-button border-color-21 background-img-25"></div>
                     <p class="large-letters">Листики временной<br>нетрудоспособности</p>
                 </a>
             </div>
             <div class="round-button-contaner column column-block">
-                <a class="as-block" href="some_page.html" alt="Ведение медецинской документации">
+                <a class="rnd-button as-block start-pos" href="some_page.html" alt="Ведение медецинской документации">
                     <div class="round-button border-color-21 background-img-26"></div>
                     <p class="large-letters">Ведение медецинской<br>документации</p>
                 </a>
             </div>
             <div class="round-button-contaner column column-block">
-                <a class="as-block" href="some_page.html" alt="Подарочные сертификаты">
+                <a class="rnd-button as-block start-pos" href="some_page.html" alt="Подарочные сертификаты">
                     <div class="round-button border-color-21 background-img-27"></div>
                     <p class="large-letters">Подарочные<br>сертификаты</p>
                 </a>
             </div>
+            <script>roundButtonsBehavior.init();</script>
         </div>
     </section>
 
@@ -286,27 +313,33 @@
             <div class="gallery">
                 <div class="columns small medium-6 large-5">
                     <a class="big-photo" href="some_page.html">
-                        <img class="pic-width" src="assets/pictures/gallery/pic_1.jpg" alt="Сочиняем хокку">
+                        <img class="pic-width pic-anim" src="assets/pictures/gallery/pic_1.jpg" alt="Сочиняем хокку">
+                        <img class="absolute hook-pos" src="assets/pictures/gallery/stiker_hook.png" alt="Якорь">
+                        <img class="absolute cloud-pos" src="assets/pictures/gallery/stiker_cloud.png" alt="Облако">
+                        <img class="absolute bird-pos" src="assets/pictures/gallery/stiker_bird.png" alt="Птичка">
                         <h4 class="link-header">Итоги конкурса «Сочиняем хокку»</h4>
                         <p>Награждаем победителей и дарим подарки участникам!</p>
                     </a>
                 </div>
                 <div class="columns small medium-5 large-3">
                     <a class="small-photo" href="some_page.html">
-                        <img class="pic-width" src="assets/pictures/gallery/pic_2.jpg" alt="Детский кардиолог">
+                        <img class="pic-width pic-anim" src="assets/pictures/gallery/pic_2.jpg" alt="Детский кардиолог">
+                        <img class="absolute button-pos" src="assets/pictures/gallery/stiker_pugovica.png" alt="Птичка">
                         <h4 class="link-header">Детский кардиолог</h4>
                         <p>C 16 мая в клинике ведет прием детский кардиолог, проводится запись ЭКГ.</p>
                     </a>
                 </div>
                 <div class="columns small hide-for-medium-only large-3 end">
                     <a class="small-photo" href="some_page.html">
-                        <img class="pic-width" src="assets/pictures/gallery/pic_3.jpg" alt="Врач ортопед">
+                        <img class="pic-width pic-anim" src="assets/pictures/gallery/pic_3.jpg" alt="Врач ортопед">
+                        <img class="absolute mushrum-pos" src="assets/pictures/gallery/stiker_mushroom.png" alt="Птичка">
                         <h4 class="link-header">Врач-ортопед</h4>
                         <p>С 5 мая в клинике постоянно ведёт приём врач-ортопед Бондаревская Маргарита Николаевна.</p>
                     </a>
                 </div>
             </div>
         </div>
+        
     </section>
 
     <section class="footer">

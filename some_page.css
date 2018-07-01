@@ -3,12 +3,8 @@ body{
 }
 .bg-image {
     overflow-Y: hidden; 
-    background: url(assets/pictures/slider_5/inner_header_flowers.png) bottom repeat-x, url(assets/pictures/slider_5/inner_header_malish.png) no-repeat 40% bottom, url(assets/pictures/slider_5/inner_header_boy.png) no-repeat 70%, url(assets/pictures/slider_5/inner_header_lian.png) no-repeat 20% top, url(assets/pictures/slider_5/inner_header_01.jpg) repeat;
+    background: url(assets/pictures/slider_5/inner_header_flowers.png) bottom repeat-x, url(assets/pictures/slider_5/inner_header_malish.png) no-repeat 20% bottom, url(assets/pictures/slider_5/inner_header_boy.png) no-repeat 70%, url(assets/pictures/slider_5/inner_header_lian.png) no-repeat 20% top, url(assets/pictures/slider_5/inner_header_01.jpg) repeat;
 }
-.bg-image:hover{
-    
-}
-
 .girl-arms{
     width: 159px;
     height: 12px;
@@ -22,9 +18,15 @@ body{
     width: 116px;
     height: 189px;
     position: relative;
-    top: 104px;
+    top: 124px;
+    transition-duration: .5s;
     margin: 0 auto;
     background: url(assets/pictures/slider_5/inner_header_girl.png);
+}
+
+.bg-image:hover > .girl-head{
+    top: 104px;
+    transition-duration: .5s;
 }
 
 .row.small-6{
@@ -37,6 +39,7 @@ body{
     height: 293px;
 }
 body{
+    height: 100vh;
     background: #e9e5ce;
 }
 h2{

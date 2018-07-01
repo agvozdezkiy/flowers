@@ -39,7 +39,23 @@
             float: left;
             background: blueviolet;
         }
+        .a + .b{
+            color: red;
+        }
         
+        .move{
+            animation: anim 4s forwards;
+            width: 50px;
+            height: 50px;
+            background: red;
+            top: 80%;
+            position: absolute;
+        }
+        @keyframes anim{
+                from{left: 100px;}
+                to{left: 200px;}
+            }
+
     </style>
 </head>
 <body>
@@ -53,6 +69,8 @@
         <div class="float-tree"></div>
         <div class="float-four"></div>
      </div>
-     <img src="../assets/pictures/other/25.jpg" alt="Picture" style="allign: center;">
+     <p> Lorem ipsum dolor sit amet <span class="a"> consectetur </span> adipisicing <span class="b">elit</span>. Vitae, quam illo. Mollitia eligendi, necessitatibus, est temporibus itaque animi autem dolorum <span class="c">exercitationem</span> a impedit possimus aspernatur cupiditate at. Repudiandae, totam non?</p>
+
+     <div class="move"></div>
 </body>
 </html>
