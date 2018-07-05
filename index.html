@@ -29,7 +29,7 @@
 
     <header class="relative">
         <!-- Слайдер -->
-        <div id="slider" class="show-for-medium slider">
+        <div id="slider" class="show-for-medium">
             <div class="bxSlider">
                 <!-- <div id="slide-0" class="bg-image-1 slider-size"></div> -->
                 <div id="slide-0" class="bg-image-2 slider-size">
@@ -61,12 +61,12 @@
         <div class="bg-image-4 slider-size-2 show-for-small-only"></div>
 
         <!-- Меню для большого экрана-->
-        <div class="absolute-for-menu show-for-large">
+        <div class="absolute-for-menu show-for-large padding-top">
             <div class="row">
                 <div class="columns large-4">
                     <div class="row">
                         <div class="columns large-12 neucha green-text">
-                            <p>Растим бережно</p>
+                            <p class="margin-top-0">Растим бережно</p>
                         </div>
                         <div class="columns large-12 large-letters">
                             <table>
@@ -83,7 +83,7 @@
                 <div class="columns large-4">
                     <div class="row">
                         <div class="columns large-12 neucha green-text align-right">
-                            <p>
+                            <p class="margin-top-0">
                                 <span>+7 (423)</span> 255–75–75</p>
                         </div>
                         <div class="columns large-12 large-letters">
@@ -106,7 +106,7 @@
                 <div class="columns small-6">
                     <img class="logo-for-small" src="assets/pictures/logo_top.svg" alt="Цветы жизни">
                 </div>
-                <div class="columns small-6 burger-position">
+                <div class="columns small-6 align-right">
                     <input type="checkbox" id="burger-checkbox" style="display: none;" />
                     <label for="burger-checkbox" id="burger-button" style="display: inline-block;">
                         <div></div>
@@ -115,32 +115,25 @@
                     </label>
                 </div>
             </div>
-        </div>
-
-        <div class="fixed-for-menu">
-            <div class="side-bar">
-
-                <div class="burger-2-position">
-                    <input type="checkbox" id="burger-checkbox" style="display: none;"/>
-                    <label for="burger-checkbox" id="burger-button" style="display: inline-block;">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </label>
+        
+            <div id="field" class="small-menu closed">
+                <div id="sideBar" class="side-bar closed">   
+                    <ul>
+                        <li class="seablue-text underline">Главная страница</li>
+                        <li class="white-text underline"><a href="some_page.html">О нас</a></li>
+                        <li class="white-text underline"><a href="some_page.html">Сотрудники</a></li>
+                        <li class="white-text underline"><a href="some_page.html">Услуги</a></li>
+                        <li class="white-text underline"><a href="some_page.html">Программы</a></li>
+                        <li class="white-text underline"><a href="some_page.html">Статьи</a></li>
+                        <li class="white-text underline"><a href="some_page.html">Контакты</a></li>
+                    </ul>
                 </div>
-
-                <ul>
-                    <li class="seablue-text underline">Главная страница</li>
-                    <li class="white-text underline"><a href="some_page.html">О нас</a></li>
-                    <li class="white-text underline"><a href="some_page.html">Сотрудники</a></li>
-                    <li class="white-text underline"><a href="some_page.html">Услуги</a></li>
-                    <li class="white-text underline"><a href="some_page.html">Программы</a></li>
-                    <li class="white-text underline"><a href="some_page.html">Статьи</a></li>
-                    <li class="white-text underline"><a href="some_page.html">Контакты</a></li>
-                </ul>
             </div>
         </div>
-        
+        <script>
+            menu.init();
+            burger.init();
+        </script>
     </header>
                 <!-- Сразу к делу -->
     <section class="quick-links-section">
@@ -292,8 +285,8 @@
                     <p class="large-letters">Подарочные<br>сертификаты</p>
                 </a>
             </div>
-            <script>roundButtonsBehavior.init();</script>
         </div>
+        <script>roundButtonsBehavior.init();</script>
     </section>
 
 
@@ -313,26 +306,32 @@
             <div class="gallery">
                 <div class="columns small medium-6 large-5">
                     <a class="big-photo" href="some_page.html">
-                        <img class="pic-width pic-anim" src="assets/pictures/gallery/pic_1.jpg" alt="Сочиняем хокку">
-                        <img class="absolute hook-pos" src="assets/pictures/gallery/stiker_hook.png" alt="Якорь">
-                        <img class="absolute cloud-pos" src="assets/pictures/gallery/stiker_cloud.png" alt="Облако">
-                        <img class="absolute bird-pos" src="assets/pictures/gallery/stiker_bird.png" alt="Птичка">
+                        <div class="relative">
+                            <img class="pic-width pic-anim" src="assets/pictures/gallery/pic_1.jpg" alt="Сочиняем хокку">
+                            <img class="absolute hook-pos" src="assets/pictures/gallery/stiker_hook.png" alt="Якорь">
+                            <img class="absolute cloud-pos" src="assets/pictures/gallery/stiker_cloud.png" alt="Облако">
+                            <img class="absolute bird-pos" src="assets/pictures/gallery/stiker_bird.png" alt="Птичка">
+                        </div>
                         <h4 class="link-header">Итоги конкурса «Сочиняем хокку»</h4>
                         <p>Награждаем победителей и дарим подарки участникам!</p>
                     </a>
                 </div>
                 <div class="columns small medium-5 large-3">
                     <a class="small-photo" href="some_page.html">
-                        <img class="pic-width pic-anim" src="assets/pictures/gallery/pic_2.jpg" alt="Детский кардиолог">
-                        <img class="absolute button-pos" src="assets/pictures/gallery/stiker_pugovica.png" alt="Птичка">
+                        <div class="relative">
+                            <img class="pic-width pic-anim" src="assets/pictures/gallery/pic_2.jpg" alt="Детский кардиолог">
+                            <img class="absolute button-pos" src="assets/pictures/gallery/stiker_pugovica.png" alt="Пуговица">
+                        </div>
                         <h4 class="link-header">Детский кардиолог</h4>
                         <p>C 16 мая в клинике ведет прием детский кардиолог, проводится запись ЭКГ.</p>
                     </a>
                 </div>
                 <div class="columns small hide-for-medium-only large-3 end">
                     <a class="small-photo" href="some_page.html">
-                        <img class="pic-width pic-anim" src="assets/pictures/gallery/pic_3.jpg" alt="Врач ортопед">
-                        <img class="absolute mushrum-pos" src="assets/pictures/gallery/stiker_mushroom.png" alt="Птичка">
+                        <div class="relative">
+                            <img class="pic-width pic-anim" src="assets/pictures/gallery/pic_3.jpg" alt="Врач ортопед">
+                            <img class="absolute mushrum-pos" src="assets/pictures/gallery/stiker_mushroom.png" alt="Гриб">
+                        </div>
                         <h4 class="link-header">Врач-ортопед</h4>
                         <p>С 5 мая в клинике постоянно ведёт приём врач-ортопед Бондаревская Маргарита Николаевна.</p>
                     </a>
@@ -346,6 +345,5 @@
         <h2>Футер</h2>
         <p>с копирайтом и контактами</p>
     </section>
-
 </body>
 </html>

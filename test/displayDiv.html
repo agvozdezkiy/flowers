@@ -72,5 +72,33 @@
      <p> Lorem ipsum dolor sit amet <span class="a"> consectetur </span> adipisicing <span class="b">elit</span>. Vitae, quam illo. Mollitia eligendi, necessitatibus, est temporibus itaque animi autem dolorum <span class="c">exercitationem</span> a impedit possimus aspernatur cupiditate at. Repudiandae, totam non?</p>
 
      <div class="move"></div>
+<p>Checked</p> <input type="checkbox" id="check" title="check"><br>
+<p>unChecked</p><input type="checkbox" id="uncheck" title="uncheck"><br>
+<p>Res</p><input type="checkbox" id="el">
+<script>
+    var check = document.getElementById("check");
+    var uncheck = document.getElementById("uncheck");
+    var  el = document.getElementById("el");
+
+    check.addEventListener('change', setChecked);
+    uncheck.addEventListener('change', unsetChecked);
+
+    function setChecked(){
+        el.setAttribute('checked', '');
+        console.log('------unChecked--------------', el.attributes);
+        console.log('check.attributes: ', check.attributes);
+        console.log('uncheck.attributes: ', uncheck.attributes);
+        console.log('el2.attributes: ', el.attributes);
+    }
+
+    function unsetChecked(){
+        el.removeAttribute('checked');
+        console.log('------unChecked--------------', el.attributes);
+        console.log('check.attributes: ', check.attributes);
+        console.log('uncheck.attributes: ', uncheck.attributes);
+        console.log('el2.attributes: ', el.attributes);
+    }
+</script>
+
 </body>
 </html>

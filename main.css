@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    overflow-x: hidden;
 }
 
 .slider-size {
@@ -36,7 +37,9 @@ table a:link, table a:active, table a:visited{
 }
 
 td{
-    padding: 0.7rem calc(6vw - 53px);
+    width: 117px;
+    text-align: center;
+    padding: 0.7rem calc(4vw - 58px);
     white-space: nowrap;
 }
 td:first-child{
@@ -49,8 +52,6 @@ td:last-child{
 /*----------------------------------------*
  *--Классы переопределяющие вид пейджера--*
  *----------------------------------------*/
-
-/* #region */
 
 .bx-wrapper {
     border: none;
@@ -86,9 +87,10 @@ td:last-child{
     height: 40px;
     display: inline-block;
     cursor: pointer;
-    margin: 1.7em;
+    margin: 2.6em 2em 1.7em 1.7em;
     transition: all .5s;
     text-align: left;
+    z-index: 2100;
 }
 
 #burger-button div,
@@ -150,11 +152,8 @@ td:last-child{
     transition: background-color .15s, top .15s, transform .15s .15s, -webkit-transform .15s .15s;
 }
 
-/* #endregion */
 
 /*----------------Общее------------*/
-
-/* #region */
 
 .head-logo {
     background: url(assets/pictures/logo_top.svg) center no-repeat;
@@ -201,11 +200,8 @@ td:last-child{
 .absolute{
     position: absolute;
 }
-/* #endregion */
 
 /*----------------Содержимое хедера------------*/
-
-/* #region */
 
 .absolute-for-menu {
     position: absolute;
@@ -250,29 +246,54 @@ td:last-child{
     display: inline-block;
     text-align: right;
 }
+.padding-top{
+    padding-top: 30px;
+}
+.margin-top-0{
+    margin-top: 0;
+}
 
 .logo-for-small {
     padding-top: 35px;
     padding-left: 20px;
 }
-
-.fixed-for-menu{
-    position: fixed;
-    z-index: 2000;
+.small-menu{
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
+    position: fixed;
+    z-index: 2000;
+}
+.small-menu.closed{
+    visibility: hidden;
+    background-color: rgba(256, 256, 256, 0);
+    transition-duration: .4s;
+}
+.small-menu.opened{
+    visibility: visible;
+    background: rgba(256, 256, 256, .7);
+    transition-duration: .4s;
 }
 .side-bar{
     float: right;
     height: 100vh;
+    padding-top: 100px;
     background: linear-gradient(167deg, #b7d044, #12ada4);
     box-shadow: 20px 0 30px black;
 }
+.side-bar.closed{
+    transform: translateX(310px);
+    transition-duration: .3s;
+}
+.side-bar.opened{
+    transform: translateX(0);
+    transition-duration: .3s;
+}
 
-.burger-2-position{
-    margin: 15px 0 0 176px;
+.burger-position{
+    text-align: right;
+    margin: 15px 10px 0 0;
 }
 
 ul{
@@ -297,11 +318,8 @@ li a:link, li a:visited, li a:active, li{
     border-bottom: solid 1px #b7d044;
 }
 
-/* #endregion */
 
 /*--Сразу к делу */
-
-/* #region */
 
 .quick-links-section {
     overflow: hidden;
@@ -352,19 +370,10 @@ li a:link, li a:visited, li a:active, li{
     transition-duration: .3s;
 }
 
-@media screen and (min-width: 64rem){
-    .form{
-        height: 230px;
-    }
-}
 .text-center-and-left{
     text-align: center;
 }
-@media screen and (min-width: 64rem){
-    .text-center-and-left{
-        text-align: left;
-    }
-}
+
 
 .as-button{
     display: block;
@@ -375,8 +384,15 @@ li a:link, li a:visited, li a:active, li{
     margin: 0 auto 1rem auto;
     border-radius: 10px;
 }
-
 @media screen and (min-width: 64rem){
+    .form{
+        height: 230px;
+    }
+
+    .text-center-and-left{
+        text-align: left;
+    }
+    
     .quick-links-height{
         height: 230px;
     }
@@ -387,11 +403,8 @@ li a:link, li a:visited, li a:active, li{
     }
 }
 
-/* #endregion */
 
 /*--О нашей клинике */
-
-/* #region */
 
 .about-section {
     margin-top: 1px;
@@ -417,11 +430,8 @@ li a:link, li a:visited, li a:active, li{
     }
 }
 
-/* #endregion */
 
 /*--Программы-сопровождения*/
-
-/* #region */
 
 #support-section {
     padding-top: 2rem;
@@ -500,7 +510,6 @@ li a:link, li a:visited, li a:active, li{
     background: url(assets/pictures/round_buttons/b_s_usami.jpg) center/cover;
 }
 
-/* #endregion */
 
 /*--Наши услуги--*/
 
@@ -623,31 +632,31 @@ li a:link, li a:visited, li a:active, li{
 
 .hook-pos{
     position: absolute;
-    top: -30px;
-    left: 20px;
+    top: -10%;
+    left: 5%;
     transform: scale(.8);
 }
 .cloud-pos{
     position: absolute;
-    top: 200px;
-    left: -60px;
-    transform: scale(.5);
+    top: 60%;
+    left: -50px;
+    transform: scale(.6);
 }
 .bird-pos{
     position: absolute;
-    top: 100px;
-    left: 430px;
-    transform: scale(.5);
+    top: 30%;
+    right: -50px;
+    transform: scale(.7);
 }
 .button-pos{
     position: absolute;
-    top: 170px;
-    left: 220px;
+    bottom: -20px;
+    right: -20px;
 }
 .mushrum-pos{
     position: absolute;
-    top: 50px;
-    left: 240px;
+    top: 30%;
+    right: -30px;
 }
 
 .small-photo:link, .small-photo:visited, .small-photo:active,
@@ -662,13 +671,10 @@ li a:link, li a:visited, li a:active, li{
 }
 
 
-/* #endregion */
-
 /* --Футер */
-/* #region */
+
 .footer{
     padding: 1rem 0;
     text-align: center;
     background: #e9e5ce;
 }
-/* #endregion */
